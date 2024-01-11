@@ -1,0 +1,14 @@
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\bin\Debug\net8.0\AutomaticLetterGradeAndCredits.exe
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\bin\Debug\net8.0\AutomaticLetterGradeAndCredits.deps.json
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\bin\Debug\net8.0\AutomaticLetterGradeAndCredits.runtimeconfig.json
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\bin\Debug\net8.0\AutomaticLetterGradeAndCredits.dll
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\bin\Debug\net8.0\AutomaticLetterGradeAndCredits.pdb
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\obj\Debug\net8.0\AutomaticLetterGradeAndCredits.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\obj\Debug\net8.0\AutomaticLetterGradeAndCredits.AssemblyInfoInputs.cache
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\obj\Debug\net8.0\AutomaticLetterGradeAndCredits.AssemblyInfo.cs
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\obj\Debug\net8.0\AutomaticLetterGradeAndCredits.csproj.CoreCompileInputs.cache
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\obj\Debug\net8.0\AutomaticLetterGradeAndCredits.dll
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\obj\Debug\net8.0\refint\AutomaticLetterGradeAndCredits.dll
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\obj\Debug\net8.0\AutomaticLetterGradeAndCredits.pdb
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\obj\Debug\net8.0\AutomaticLetterGradeAndCredits.genruntimeconfig.cache
+C:\Users\sanji\OneDrive\Desktop\Github\AutomaticLetterGradeAndCredits\obj\Debug\net8.0\ref\AutomaticLetterGradeAndCredits.dll
