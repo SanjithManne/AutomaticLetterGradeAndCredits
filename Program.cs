@@ -1,20 +1,21 @@
-﻿using System.Runtime.ExceptionServices;
-int currentAssignments = 5;
+﻿using System.Data.Common;
+using System.Runtime.ExceptionServices;
+decimal currentAssignments = 5m;
 
-int[] sophiaScores = new int[] { 90, 86, 87, 98, 100, 94, 90 };
-int[] andrewScores = new int[] { 92, 89, 81, 96, 90, 89 };
-int[] emmaScores = new int[] { 90, 85, 87, 98, 68, 89, 89, 89 };
-int[] loganScores = new int[] { 90, 95, 87, 88, 96, 96 };
-int[] beckyScores = new int[] { 92, 91, 90, 91, 92, 92, 92 };
-int[] chrisScores = new int[] { 84, 86, 88, 90, 92, 94, 96, 98 };
-int[] ericScores = new int[] { 80, 90, 100, 80, 90, 100, 80, 90 };
-int[] gregorScores = new int[] { 91, 91, 91, 91, 91, 91, 91 };    
+decimal[] sophiaScores = new decimal[] { 90, 86, 87, 98, 100, 94, 90 };
+decimal[] andrewScores = new decimal[] { 92, 89, 81, 96, 90, 89 };
+decimal[] emmaScores = new decimal[] { 90, 85, 87, 98, 68, 89, 89, 89 };
+decimal[] loganScores = new decimal[] { 90, 95, 87, 88, 96, 96 };
+decimal[] beckyScores = new decimal[] { 92, 91, 90, 91, 92, 92, 92 };
+decimal[] chrisScores = new decimal[] { 84, 86, 88, 90, 92, 94, 96, 98 };
+decimal[] ericScores = new decimal[] { 80, 90, 100, 80, 90, 100, 80, 90 };
+decimal[] gregorScores = new decimal[] { 91, 91, 91, 91, 91, 91, 91 };    
 
 
-int[] studentScores = new int[10];
+decimal[] studentScores = new decimal[10];
 string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan", "Becky", "Chris", "Eric", "Gregor" };
 string grade = "";
-Console.WriteLine("Student\t\tScore\tGrade\n");
+Console.WriteLine("Student\t\tOld Score\tFinal Score\tGrade\t\tExtra Credit\n");
 
 foreach(string name in studentNames)
 {
@@ -46,21 +47,30 @@ foreach(string name in studentNames)
     else
     continue;
 
-    int sumScores = 0;
-    decimal studentScoreAvg = 0;
-    int totalExams = 0;;
+    decimal sumScores = 0m;
+    decimal oldStudentScore = 0m;
+    decimal studentScoreAvg = 0m;
+    decimal totalExams = 0m;
+    decimal oldStudentScoreAvg = 0m;
+    decimal extraCredit = 0m;
+
 
     foreach(int score in studentScores)
     {
+
     totalExams += 1;
 
-        if(totalExams <= currentAssignments)
-        sumScores += score ;
-        else
-        sumScores += score / 10;
+    if(totalExams <= currentAssignments)
+    oldStudentScore += score;
+    
+            if(totalExams <= currentAssignments)
+            sumScores += score ;
+            else
+            sumScores += score / 10m;
+            oldStudentScoreAvg = (decimal)oldStudentScore / (decimal)currentAssignments;
+            studentScoreAvg = (decimal)sumScores / (decimal)currentAssignments;
+   
 
-    studentScoreAvg = (decimal)sumScores / currentAssignments;
-      
         if (studentScoreAvg > 97)
         grade = "A+";
         else if (studentScoreAvg > 93)
@@ -87,7 +97,8 @@ foreach(string name in studentNames)
         grade = "D-";
         else 
         grade = "F";
-
     }
-Console.WriteLine($"{name}\t\t{studentScoreAvg}\t{grade}");
+   
+    extraCredit = (decimal)studentScoreAvg - (decimal)oldStudentScoreAvg;
+    Console.WriteLine($"{name}\t\t{oldStudentScoreAvg:F1}\t\t{studentScoreAvg:F2}\t\t{grade}\t\t{oldStudentScoreAvg:F0} ({extraCredit:F2} pts)");
 }
